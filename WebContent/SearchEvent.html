@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<title>Search</title>
+	<style>
+		article {
+			float: left;
+			width: 70%;
+			background-color: #f1f1f1;
+		
+		}
+		header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			color: white;
+		}
+		nav {
+			float: left;
+			width: 30%;
+		}
+		a {
+			font-family: 'Courier New', Courier, monospace;
+			font-size: x-large;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Search Planner</h1>
+	</header>
+	<section>
+		<nav>
+			<a href="CreateEvent.html">Add New Event To Planner</a>
+			<form action="ShowAllEvents" method="POST">
+				<input type="Submit" value="Show All Events">
+			</form>
+		</nav>
+		<article>
+			<form action="SearchEventServlet" method="POST">
+				Event Name: <input type="text" name="eventName">
+				<br/>
+				Event Date: <input type="date" name="eventDate">
+				<br/>
+				<input type="Submit" value="Search">
+			</form>
+		</article>
+	</section>
+</body>
+
+</html>

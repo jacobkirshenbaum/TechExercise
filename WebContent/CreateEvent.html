@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Create</title>
+	<style>
+		article {
+			float: left;
+			width: 70%;
+			background-color: #f1f1f1;
+		
+		}
+		header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			color: white;
+		}
+		nav {
+			float: left;
+			width: 30%;
+		}
+		a {
+			font-family: 'Courier New', Courier, monospace;
+			font-size: x-large;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Add Event to Planner</h1>
+	</header>
+	<section>
+		<nav>
+			<a href="SearchEvent.html">Search Planner</a>
+			<form action="ShowAllEvents" method="POST">
+				<input type="Submit" value="Show All Events">
+			</form>
+		</nav>
+		<article>
+			<form action="TechExerciseServlet" method="POST">
+				Event Name: <input type="text" name="eventName">
+				<br/>
+				Event Date: <input type="date" name="eventDate">
+				<br/>
+				<input type="submit" value="Submit"/>
+			</form>
+		</article>	
+	</section>
+</body>
+
+</html>
